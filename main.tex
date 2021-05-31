@@ -1,0 +1,287 @@
+%%
+%% This is file `sample-manuscript.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `manuscript')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-manuscript.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+%%%% Small single column format, used for CIE, CSUR, DTRAP, JACM, JDIQ, JEA, JERIC, JETC, PACMCGIT, TAAS, TACCESS, TACO, TALG, TALLIP (formerly TALIP), TCPS, TDSCI, TEAC, TECS, TELO, THRI, TIIS, TIOT, TISSEC, TIST, TKDD, TMIS, TOCE, TOCHI, TOCL, TOCS, TOCT, TODAES, TODS, TOIS, TOIT, TOMACS, TOMM (formerly TOMCCAP), TOMPECS, TOMS, TOPC, TOPLAS, TOPS, TOS, TOSEM, TOSN, TQC, TRETS, TSAS, TSC, TSLP, TWEB.
+% \documentclass[acmsmall]{acmart}
+
+%%%% Large single column format, used for IMWUT, JOCCH, PACMPL, POMACS, TAP, PACMHCI
+% \documentclass[acmlarge,screen]{acmart}
+
+%%%% Large double column format, used for TOG
+% \documentclass[acmtog, authorversion]{acmart}
+
+%%%% Generic manuscript mode, required for submission
+%%%% and peer review
+
+
+%\documentclass[manuscript,screen,review]{acmart}
+
+\documentclass[sigconf]{acmart}
+
+%% Fonts used in the template cannot be substituted; margin 
+%% adjustments are not allowed.
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmcopyright}
+\copyrightyear{2021}
+\acmYear{2021}
+\acmDOI{10.1145/1122445.1122456}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[Interacción 2021]{XXI CONGRESO INTERNACIONAL DE INTERACCIÓN PERSONA-ORDENADOR}{September 22--24, 2021}{Málaga, España}
+\acmBooktitle{Interacción 2021, XXI CONGRESO INTERNACIONAL DE INTERACCIÓN PERSONA-ORDENADOR,
+  September 22--24, 2021,Málaga, España}
+\acmPrice{15.00}
+\acmISBN{978-1-4503-XXXX-X/18/06}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Adaptive gamification of citizen science projects}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+
+\author{María Dalponte Ayastuy}
+\email{mdalponte@unq.edu.ar}
+
+\affiliation{%
+  \institution{Departamento CyT, Universidad Nacional de Quilmes}
+  \streetaddress{R. Saenz Peña 352}
+  \city{Bernal}
+  \state{Buenos Aires}
+  \country{Argentina}
+}
+ 
+\affiliation{%
+  \institution{LIFIA, Fac. de Informatica, Universidad Nac. de La Plata}
+  \streetaddress{50 y 120}
+  \city{La Plata}
+  \state{Buenos Aires}
+  \country{Argentina}
+}
+
+\orcid{0000-0002-1412-5694}
+
+\author{Diego Torres}
+\email{diego.torres@lifia.info.unlp.edu.ar}
+
+\affiliation{%
+  \institution{LIFIA, CICPBA-Fac. de Informatica, Universidad Nac. de La Plata}
+  \streetaddress{50 y 120}
+  \city{La Plata}
+  \state{Buenos Aires}
+  \country{Argentina}
+}
+
+\affiliation{%
+  \institution{Departamento CyT, Universidad Nacional de Quilmes}
+  \streetaddress{R. Saenz Peña 352}
+  \city{Bernal}
+  \state{Buenos Aires}
+  \country{Argentina}
+}
+
+
+\renewcommand{\shortauthors}{Dalponte and Torres}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10003120.10003121</concept_id>
+       <concept_desc>Human-centered computing~Human computer interaction (HCI)</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10010147.10010257</concept_id>
+       <concept_desc>Computing methodologies~Machine learning</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+ </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Human-centered computing~Human computer interaction (HCI)}
+\ccsdesc[500]{Computing methodologies~Machine learning}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{Human computer interaction (HCI),Machine learning, User profiling, Adaptive gamification, Collaborative location collecting systems}
+
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+
+Citizen science encompasses a range of methodologies that encourage and support the contributions of the public to the advancement of scientific and engineering research and monitoring in ways that may include co-identifying research questions; co-designing/conducting investigations; co-designing/building/testing low-cost sensors; co-collecting and analysing data; co-developing data applications; and collaboratively solving complex problems \cite{vohland_science_2021}.
+
+
+%Frequently in scientific work, repetitive tasks can be identified. These are of such complexity that allow them to be delegated to other people who do not have scientific training, but who are trained for that specific task. This type of collaboration between academics and scientists with citizens who lack previous scientific preparation, is known as Citizen Science \cite{SILVERTOWN2009467}. Volunteers contribute their work to the scientific project with the quality required by the discipline, and for which they receive ad-hoc training. For their part, scientific institutions get help while disseminating their work to the community in which they are inserted.
+
+Citizen science has become widely known in recent years thanks to the ubiquity of technology through communication technologies and the mass use of smartphones. There is a growing number of scientific projects and volunteers that collect data through their daily used resources, and consequently a research interest is awakened for the design, development and implementation of the technologies that are needed for the exercise of citizen science \cite{Preece2016}.
+
+%As examples of citizen science projects, it is possible to highlight Wikipedia, which is an example of collective knowledge creation (CCC), as well as the zooniverse.org project, one of the most important collaboration platforms where many citizen science projects are hosted. For example, on this platform collaborators are asked to view images of distant galaxies, historical material, and diaries or videos of animals in their natural habitat and answer simple questions on these topics.
+
+%In general, emerging citizen science projects must carefully analyze different important aspects for their implementation. Firstly, to establish what technologies will be used to mediate collaboration, taking into account the objective of allowing access to the greatest number of people, considering the multiple cultural characteristics (origin, language, gender, age, etc.). Secondly, to design training strategies for volunteers in the specific tasks required by each project so that they can be carried out with quality \cite{Nerbonne2008}. As an example, for projects in which the classification of photos is requested, the volunteers must acquire the ability to identify particularities in the images that allow them to discern between one category or another. Thirdly, to look for strategies to achieve and sustain the commitment of the volunteers, to keep them motivated and feeling part of the project.
+
+The objective of allowing access to the greatest number of people, considering the multiple cultural characteristics (origin, language, gender, age, etc.) can be approached by scientific developments in the area of HCI (human-computer interaction), and particularly gamification \cite{Preece2016}. Gamification is the application of game strategies in spaces or areas whose nature is not playful \cite{Deterding2011}. A natural use of gamification is in citizen science projects \cite{Kapp2013} and there are already examples of gamified experiences.  In some of these approaches, the same related game mechanisms are found to have different impacts on different people, the use of gamification elements may be more valued by some volunteers than by others (Kanner et al. 2018). Some found it motivating and rewarding while others ignored it or made them stop participating in the project. 
+%HCI investigates the design and use of computing technologies, focusing on the interfaces between people and computers. Scientists in this discipline observe how users interact with computers and propose new ways for this interaction \cite{Jacko2002}. As a research field, HCI is an interdisciplinary research area between computer science, design and psychology, among others. 
+For some time, the HCI has been working on the formalization of \textit{playability} heuristics and models of the components of games and game experiences \cite{Deterding2011}.
+
+%In recent years, a large number of technologies have been seen that take elements from video games. Given that it is possible to demonstrate that these manage to keep the user involved and motivated to continue playing, it can be thought that  game elements and mechanics can transform other experiences to make them more enjoyable and engage the user with what needs to be stimulated. 
+
+
+
+Despite the rapid growth of the gameful design research area, and the actual level of success in the user’s engagement that it reveals, these findings are not general in terms of domain, and they cannot be generalized to all users. The one-size-fits-all approach presents several limitations because of the different motivations, personalities, needs, or values of the users \cite{bockle_towards_2017,Heeter2011}. The design of game environments that are appropriate for everyone must consider a personalization or adaptation of the game elements and mechanics that are offered  for each volunteer in each case, and this adaptation should recognize cultural aspects of the people and the interaction between them. Currently, the research stream on adaptive gamification is taking care of the gamification that each particular user needs in a particular moment, tailoring the gamification to the users and contexts\cite{orji2018,klock2015gamification}. For example, adaptation can be made on many aspects: the game storytelling, the game difficulty, the content generation, the guidance or hinting on the goals, the presentation, the curriculum sequencing, among others \cite{gobel_personalization_2016}. Nevertheless, the existing \textbf{adaptive gamification} approaches are not directly applicable to citizen science, given that they do not necessarily focus on the community aspect.
+
+\section{Research Question (Objectives) and Methodology}
+% Identificar el problema significativo en el campo de la investigación y formular claramente la pregunta de investigación.
+
+%The recognition of the diverse cultural characteristics of users is a requirement for the successful design of a technology. There are different approaches to make recommendations or adaptations of the game elements for each user, but it is not well developed in the field of citizen science and we see that combining the use of machine learning is a promising alternative.
+
+The main objective of this PhD project is to develop and design an adaptive gamification approach in the context of citizen science projects by means of big data techniques. This objective could be divided into more specific objectives. Firstly, to model users behaviour in terms of their movement patterns and interaction activity (among them and with the system); and  to describe the community profile. Lastly, to adapt the game elements and mechanics by means of the community and user profile description over time.
+
+
+%\subsection{Method}
+% Describir la metodología de investigación que se aplica o planifica.
+
+Before developing a new proposal, it is necessary to survey the state of the art in the the game elements adaptability research area, related to collaborative collecting projects and citizen science in particular.
+
+%Modelado de perfiles de participantes en proy de CS, 
+
+
+The research methodology is an iterative process in which every approach that is developed is subject of heuristic evaluation and analysis. These partial results give rise to new concerns and the potential writing of a scientific article.
+If a machine learning model is defined, it should be test on historical data of large scale datasets from Location Based Social Networks (LBSN) or Collaborative Location Collecting Systems projects (CLCS). On the other hand, if a prototype for end users is developed, a Heuristic Evaluation for Usability in HCI is conducted \cite{Nielsen1990}.
+
+
+%are developed through a machine learning technique  and then tested through the specific machine learning heuristics, sopported by large scale datasets from Location Based Social Networks (LBSN) and Collaborative Location Collecting Systems projects (CLCS). A prototype for end users will be developed and evaluated to check the approach, taking into account evaluation rules for the use of gamification in citizen science. %The final step is the evaluation and the contribution through a scientific article. 
+
+
+%The research methodology is an iterative process in which the approaches are developed through a machine learning technique  and then tested through the specific machine learning heuristics, sopported by large scale datasets from Location Based Social Networks (LBSN) and Collaborative Location Collecting Systems projects (CLCS). A prototype for end users will be developed and evaluated to check the approach, taking into account evaluation rules for the use of gamification in citizen science. %The final step is the evaluation and the contribution through a scientific article. 
+
+To adapt the game elements to each user, a behaviour model of the users in citizen science will be built. Furthermore, it is necessary to model and characterize citizen science projects to propose specific gamification elements for their application in these projects.
+
+
+\section{State of the art}
+%  Describir el estado actual del dominio del problema y las soluciones relacionadas.
+% EN DOS PARRAFOS RESUMIR EL MAPPING
+% PARA CONOCER LOS DETALLES SE REALIZÓ UN MAPEO SOBRE 50 PAPERS...
+
+%\textbf{definición de: gamification, adaptive gamification, col SYSTEM? citar gobel, deterding}
+
+%Taking into account the underlying cultural diversity in those projects, the adaptability of gamification design and strategies is a promissory research field. The existing research on gamification applied to collaborative systems in terms of personalization is preliminary or even immature. \cite{ayastuy_adaptive_2021}
+ 
+
+To identify representative studies related to adaptive gamification and CLCS, a systematic mapping
+was carried out \cite{petersen_guidelines_2015}. The review allowed identifying different proposals for the scope (standard, ad-hoc or flexible) and the versatility (dynamic vs. static) of the user model, but it was found that in most of the cases, the model is neither defined nor explicitly specified. 
+
+There were found, as a result of the evaluation, different adaptation points of view, such as difficulty adaptation, storytelling adaptation, community-based adaptation, or gamification elements adaptation, where the goals/challenges and points are the most used. The user modeling is also important for an adaptation strategy, and must be considered the scope of the model (standard, ad-hoc or flexible) and the versatility (dynamic vs. static). The aspect that deserves further research is the adaptability taking into account the community, focusing on features that have not yet been worked on, such as cultural diversity, gender, and multiplicity of knowledge. Also, it is interesting to develop an approach of community modeling in community-aware adaptive gamification. These findings are compiled in  \cite{ayastuy_adaptive_2021}.
+
+
+\section{Avances}
+%Presentar claramente cualquier idea preliminar, el enfoque propuesto y los resultados alcanzados hasta ahora.
+\begin{itemize}
+    \item \textit{Adaptive Gamification in Collaborative systems, a Systematic Mapping Study}:  a study of the published research on the application of adaptive gamification to collaborative systems. The study  focuses  on  works  that  explicitly  discuss  an approach  of personalization or adaptation of the gamification elements in this type of system.  It employs a systematic mapping design in which a categorical structure for classifying the research results is proposed based on the topics that emerged from the papers review.  Published \cite{ayastuy_adaptive_2021}
+    %The main contributions of this paper are a formalization of the adaptation strategies and the proposal of a new taxonomy for gamification elements adaptation.   The  results  evidence  the  lack  of  research  literature  in  the  study of adapting gamification in the field of collaborative systems.  Considering the underlying cultural diversity in those projects, the adaptability of gamification design and strategies is a promissory research field
+    \item \textit{The use of big data in adaptive gamification in collaborative location collecting systems: a case of traveling behavior detection}\\ An approach of modeling the user profile as a spatial-temporal behaviour time series. This work is focused on the first steps to detect users’ behavioral profiles related to spatial-temporal activities in the context of collaborative location collecting systems. Not yet published
+    
+    \item \textit{Relevance of non-activity representation in traveling user behavior profiling for adaptive gamification}\\ This work presents two approaches of traveling user behavior pro-filing: a raw series built up with categorical data that describes the activity of the user in a period of time, and a timed series that is an enhanced version of the first that includes a representation of the non-activity time frames. In order to describe user behavior categories to offer a tailored gamification strategy, this article seeks to analyze what aspects the different representations can contribute. Not yet published
+\end{itemize}
+
+
+
+
+\section{Contributions}
+%Resumir las contribuciones del trabajo del solicitante al dominio del problema y resalte su singularidad.
+
+%Mencionar las contribuciones del objetivo, y la evaluación del estado del arte
+
+The contributions of this PhD project should include in the first place a state of the art research. 
+
+In addition, a model of the user profile as well as the collaboration community, which considers a characterization of citizen science applications and the ways of interacting with them.
+
+Finally, patterns of machine learning models in the context of adaptive gamification of citizen science, as well as evaluation rules for the use of gamification in citizen science.
+
+
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-authordraft.tex'.

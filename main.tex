@@ -58,8 +58,8 @@
 \acmDOI{10.1145/1122445.1122456}
 
 %% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[Interacción 2021]{XXI CONGRESO INTERNACIONAL DE INTERACCIÓN PERSONA-ORDENADOR}{September 22--24, 2021}{Málaga, España}
-\acmBooktitle{Interacción 2021, XXI CONGRESO INTERNACIONAL DE INTERACCIÓN PERSONA-ORDENADOR,
+\acmConference[Interacción 2021]{XXI CONGRESO INTERNACIONAL DE INTERACCIÓN PERSONA-ORDENADOR}{September 22-24, 2021}{Málaga, España}
+\acmBooktitle{Interacción 2021, XXI CONGRESO INTERNACIONAL DE IPO,
   September 22--24, 2021,Málaga, España}
 \acmPrice{15.00}
 \acmISBN{978-1-4503-XXXX-X/18/06}
@@ -176,10 +176,14 @@
 \keywords{Human computer interaction (HCI),Machine learning, User profiling, Adaptive gamification, Collaborative location collecting systems}
 
 
+\begin{abstract}
+This article presents the doctoral proposal whose main objective is to develop an adaptation device for the game elements and mechanics in citizen science projects, based on the user behaviour and the community ecosystem.  Gamification is a strategy to convene participants to citizen science projects. However, it cannot be  generalized  because  of  the  different  users’  profiles,  and  so  it  must be tailored to the users and playing contexts. Specifically, this article introduces the main and secondary objectives, the methodology and the expected results of these doctoral proposal.
+\end{abstract}
 %%
 %% This command processes the author and affiliation and title
 %% information and builds the first part of the formatted document.
 \maketitle
+
 
 \section{Introduction}
 
@@ -194,7 +198,7 @@ Citizen science has become widely known in recent years thanks to the ubiquity o
 
 %In general, emerging citizen science projects must carefully analyze different important aspects for their implementation. Firstly, to establish what technologies will be used to mediate collaboration, taking into account the objective of allowing access to the greatest number of people, considering the multiple cultural characteristics (origin, language, gender, age, etc.). Secondly, to design training strategies for volunteers in the specific tasks required by each project so that they can be carried out with quality \cite{Nerbonne2008}. As an example, for projects in which the classification of photos is requested, the volunteers must acquire the ability to identify particularities in the images that allow them to discern between one category or another. Thirdly, to look for strategies to achieve and sustain the commitment of the volunteers, to keep them motivated and feeling part of the project.
 
-The objective of allowing access to the greatest number of people, considering the multiple cultural characteristics (origin, language, gender, age, etc.) can be approached by scientific developments in the area of HCI (human-computer interaction), and particularly gamification \cite{Preece2016}. Gamification is the application of game strategies in spaces or areas whose nature is not playful \cite{Deterding2011}. A natural use of gamification is in citizen science projects \cite{Kapp2013} and there are already examples of gamified experiences.  In some of these approaches, the same related game mechanisms are found to have different impacts on different people, the use of gamification elements may be more valued by some volunteers than by others (Kanner et al. 2018). Some found it motivating and rewarding while others ignored it or made them stop participating in the project. 
+The objective of allowing access to the greatest number of people, considering the multiple cultural characteristics (origin, language, gender, age, etc.) can be approached by scientific developments in the area of HCI (human-computer interaction), and particularly gamification \cite{Preece2016}. Gamification is the application of game strategies in spaces or areas whose nature is not playful \cite{Deterding2011}. A natural use of gamification is in citizen science projects \cite{Kapp2013} and there are already examples of gamified experiences.  In some of these approaches, the same related game mechanisms are found to have different impacts on different people, the use of gamification elements may be more valued by some volunteers than by others. Some found it motivating and rewarding while others ignored it or made them stop participating in the project. 
 %HCI investigates the design and use of computing technologies, focusing on the interfaces between people and computers. Scientists in this discipline observe how users interact with computers and propose new ways for this interaction \cite{Jacko2002}. As a research field, HCI is an interdisciplinary research area between computer science, design and psychology, among others. 
 For some time, the HCI has been working on the formalization of \textit{playability} heuristics and models of the components of games and game experiences \cite{Deterding2011}.
 
@@ -202,34 +206,29 @@ For some time, the HCI has been working on the formalization of \textit{playabil
 
 
 
-Despite the rapid growth of the gameful design research area, and the actual level of success in the user’s engagement that it reveals, these findings are not general in terms of domain, and they cannot be generalized to all users. The one-size-fits-all approach presents several limitations because of the different motivations, personalities, needs, or values of the users \cite{bockle_towards_2017,Heeter2011}. The design of game environments that are appropriate for everyone must consider a personalization or adaptation of the game elements and mechanics that are offered  for each volunteer in each case, and this adaptation should recognize cultural aspects of the people and the interaction between them. Currently, the research stream on adaptive gamification is taking care of the gamification that each particular user needs in a particular moment, tailoring the gamification to the users and contexts\cite{orji2018,klock2015gamification}. For example, adaptation can be made on many aspects: the game storytelling, the game difficulty, the content generation, the guidance or hinting on the goals, the presentation, the curriculum sequencing, among others \cite{gobel_personalization_2016}. Nevertheless, the existing \textbf{adaptive gamification} approaches are not directly applicable to citizen science, given that they do not necessarily focus on the community aspect.
+Despite the rapid growth of the gameful design research area, and the actual level of success in the user’s engagement that it reveals, these findings are not general in terms of domain, and they cannot be generalized to all users. The one-size-fits-all approach presents several limitations because of the different motivations, personalities, needs, or values of the users \cite{bockle_towards_2017}. The design of game environments that are appropriate for everyone must consider a personalization or adaptation of the game elements and mechanics that are offered  for each volunteer in each case, and this adaptation should recognize cultural aspects of the people and the interaction between them. Currently, the research stream on adaptive gamification is taking care of the gamification that each particular user needs in a particular moment, tailoring the gamification to the users and contexts\cite{klock2015gamification}. For example, adaptation can be made on many aspects: the game storytelling, the game difficulty, the content generation, the guidance or hinting on the goals, the presentation, the curriculum sequencing, among others \cite{gobel_personalization_2016}. Nevertheless, the existing \textbf{adaptive gamification} approaches are not directly applicable to citizen science, given that they do not necessarily focus on the community aspect.
 
-\section{Research Question (Objectives) and Methodology}
+\section{Objectives and Methodology}
 % Identificar el problema significativo en el campo de la investigación y formular claramente la pregunta de investigación.
 
 %The recognition of the diverse cultural characteristics of users is a requirement for the successful design of a technology. There are different approaches to make recommendations or adaptations of the game elements for each user, but it is not well developed in the field of citizen science and we see that combining the use of machine learning is a promising alternative.
 
-The main objective of this PhD project is to develop and design an adaptive gamification approach in the context of citizen science projects by means of big data techniques. This objective could be divided into more specific objectives. Firstly, to model users behaviour in terms of their movement patterns and interaction activity (among them and with the system); and  to describe the community profile. Lastly, to adapt the game elements and mechanics by means of the community and user profile description over time.
+The main objective of this PhD project is to develop and design an adaptive gamification approach in the context of citizen science projects. This objective can be decomposed into other finer-grained objectives. Firstly, to build a conceptual framework as a set of modeling elements and relationships that can describe the users behaviour by means of their interaction activity (among them and with the system); the citizen science community ecosystem; and the game elements and mechanics that are applicable to these collaborative projects. Lastly to design an adaptation strategy based on machine learning techniques, to tailor the game experience by means of the user behaviour, community and game elements models.
 
-
-%\subsection{Method}
-% Describir la metodología de investigación que se aplica o planifica.
-
-Before developing a new proposal, it is necessary to survey the state of the art in the the game elements adaptability research area, related to collaborative collecting projects and citizen science in particular.
+%Before developing a new proposal, it is necessary to survey the state of the art in the the game elements adaptability research area, related to collaborative collecting projects and citizen science in particular.
 
 %Modelado de perfiles de participantes en proy de CS, 
 
 
-The research methodology is an iterative process in which every approach that is developed is subject of heuristic evaluation and analysis. These partial results give rise to new concerns and the potential writing of a scientific article.
-If a machine learning model is defined, it should be test on historical data of large scale datasets from Location Based Social Networks (LBSN) or Collaborative Location Collecting Systems projects (CLCS). On the other hand, if a prototype for end users is developed, a Heuristic Evaluation for Usability in HCI is conducted \cite{Nielsen1990}.
+The research methodology is process with the following steps: 1) to survey the state of the art in the the game elements adaptability research area, related to collaborative collecting projects and citizen science in particular, 2) Development of an approach over the conceptual framework and the adaptation strategy,  3) testing the approach on historical data of large scale datasets from Location Based Social Networks (LBSN) or Collaborative Location Collecting Systems projects (CLCS), 4)  to evaluate results by applying machine learning quality heuristics, 5) to cConsider these partial results for giving place to new concerns and the potential writing of a scientific article, 6) to develop a prototype for end users where this adaptation strategy is incorporated to a citizen science application, 7) to conduct heuristic evaluations for usability in HCI \cite{Nielsen1990}.  Steps 2 to 7 are part of an iterative process.
+
+%in which every approach that is developed is subject of heuristic evaluation and analysis. These partial results give rise to new concerns and the potential writing of a scientific article.If a machine learning model is defined, it should be test on historical data of large scale datasets from Location Based Social Networks (LBSN) or Collaborative Location Collecting Systems projects (CLCS). On the other hand, if 
 
 
 %are developed through a machine learning technique  and then tested through the specific machine learning heuristics, sopported by large scale datasets from Location Based Social Networks (LBSN) and Collaborative Location Collecting Systems projects (CLCS). A prototype for end users will be developed and evaluated to check the approach, taking into account evaluation rules for the use of gamification in citizen science. %The final step is the evaluation and the contribution through a scientific article. 
 
 
 %The research methodology is an iterative process in which the approaches are developed through a machine learning technique  and then tested through the specific machine learning heuristics, sopported by large scale datasets from Location Based Social Networks (LBSN) and Collaborative Location Collecting Systems projects (CLCS). A prototype for end users will be developed and evaluated to check the approach, taking into account evaluation rules for the use of gamification in citizen science. %The final step is the evaluation and the contribution through a scientific article. 
-
-To adapt the game elements to each user, a behaviour model of the users in citizen science will be built. Furthermore, it is necessary to model and characterize citizen science projects to propose specific gamification elements for their application in these projects.
 
 
 \section{State of the art}
@@ -248,29 +247,23 @@ was carried out \cite{petersen_guidelines_2015}. The review allowed identifying 
 There were found, as a result of the evaluation, different adaptation points of view, such as difficulty adaptation, storytelling adaptation, community-based adaptation, or gamification elements adaptation, where the goals/challenges and points are the most used. The user modeling is also important for an adaptation strategy, and must be considered the scope of the model (standard, ad-hoc or flexible) and the versatility (dynamic vs. static). The aspect that deserves further research is the adaptability taking into account the community, focusing on features that have not yet been worked on, such as cultural diversity, gender, and multiplicity of knowledge. Also, it is interesting to develop an approach of community modeling in community-aware adaptive gamification. These findings are compiled in  \cite{ayastuy_adaptive_2021}.
 
 
-\section{Avances}
-%Presentar claramente cualquier idea preliminar, el enfoque propuesto y los resultados alcanzados hasta ahora.
+%\subsection{Milestones}
+The project has reached the following milestones:
+
 \begin{itemize}
     \item \textit{Adaptive Gamification in Collaborative systems, a Systematic Mapping Study}:  a study of the published research on the application of adaptive gamification to collaborative systems. The study  focuses  on  works  that  explicitly  discuss  an approach  of personalization or adaptation of the gamification elements in this type of system.  It employs a systematic mapping design in which a categorical structure for classifying the research results is proposed based on the topics that emerged from the papers review.  Published \cite{ayastuy_adaptive_2021}
     %The main contributions of this paper are a formalization of the adaptation strategies and the proposal of a new taxonomy for gamification elements adaptation.   The  results  evidence  the  lack  of  research  literature  in  the  study of adapting gamification in the field of collaborative systems.  Considering the underlying cultural diversity in those projects, the adaptability of gamification design and strategies is a promissory research field
-    \item \textit{The use of big data in adaptive gamification in collaborative location collecting systems: a case of traveling behavior detection}\\ An approach of modeling the user profile as a spatial-temporal behaviour time series. This work is focused on the first steps to detect users’ behavioral profiles related to spatial-temporal activities in the context of collaborative location collecting systems. Not yet published
+    \item \textit{Adaptive gamification in collaborative location collecting systems: a case of traveling behavior detection}\\ This work is focused on the first steps to detect users’ behavioral profiles related to spatial-temporal activities in the context of collaborative location collecting systems. Accepted in \textit{IX Conference on Cloud computing, Big Data and Emerging Topics}.
     
-    \item \textit{Relevance of non-activity representation in traveling user behavior profiling for adaptive gamification}\\ This work presents two approaches of traveling user behavior pro-filing: a raw series built up with categorical data that describes the activity of the user in a period of time, and a timed series that is an enhanced version of the first that includes a representation of the non-activity time frames. In order to describe user behavior categories to offer a tailored gamification strategy, this article seeks to analyze what aspects the different representations can contribute. Not yet published
+    \item \textit{Relevance of non-activity representation in traveling user behavior profiling for adaptive gamification}\\ This work presents two approaches of traveling user behavior pro-filing: a raw series built up with categorical data that describes the activity of the user in a period of time, and a timed series that is an enhanced version of the first that includes a representation of the non-activity time frames. To describe user behavior categories to offer a tailored gamification strategy, this article seeks to analyze what aspects the different representations can contribute. 
 \end{itemize}
-
-
 
 
 \section{Contributions}
 %Resumir las contribuciones del trabajo del solicitante al dominio del problema y resalte su singularidad.
 
-%Mencionar las contribuciones del objetivo, y la evaluación del estado del arte
-
-The contributions of this PhD project should include in the first place a state of the art research. 
-
-In addition, a model of the user profile as well as the collaboration community, which considers a characterization of citizen science applications and the ways of interacting with them.
-
-Finally, patterns of machine learning models in the context of adaptive gamification of citizen science, as well as evaluation rules for the use of gamification in citizen science.
+%En que va a aportar mi phd
+The contributions of this PhD project should include: a) a state of the art research, b) a conceptual framework modeling user behaviour profile as well as the citizen science ecosystem and the game elements and mechanics applicable to these projects, c) an adaptation device based on machine learning techniques, to tailor the gamification to the users and community. 
 
 
 %% The next two lines define the bibliography style to be used, and

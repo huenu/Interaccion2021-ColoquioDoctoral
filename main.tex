@@ -1,122 +1,46 @@
-%%
-%% This is file `sample-manuscript.tex',
-%% generated with the docstrip utility.
-%%
-%% The original source files were:
-%%
-%% samples.dtx  (with options: `manuscript')
-%% 
-%% IMPORTANT NOTICE:
-%% 
-%% For the copyright see the source file.
-%% 
-%% Any modified versions of this file must be renamed
-%% with new filenames distinct from sample-manuscript.tex.
-%% 
-%% For distribution of the original source see the terms
-%% for copying and modification in the file samples.dtx.
-%% 
-%% This generated file may be distributed as long as the
-%% original source files, as listed above, are part of the
-%% same distribution. (The sources need not necessarily be
-%% in the same archive or directory.)
-%%
-%% The first command in your LaTeX source must be the \documentclass command.
-%%%% Small single column format, used for CIE, CSUR, DTRAP, JACM, JDIQ, JEA, JERIC, JETC, PACMCGIT, TAAS, TACCESS, TACO, TALG, TALLIP (formerly TALIP), TCPS, TDSCI, TEAC, TECS, TELO, THRI, TIIS, TIOT, TISSEC, TIST, TKDD, TMIS, TOCE, TOCHI, TOCL, TOCS, TOCT, TODAES, TODS, TOIS, TOIT, TOMACS, TOMM (formerly TOMCCAP), TOMPECS, TOMS, TOPC, TOPLAS, TOPS, TOS, TOSEM, TOSN, TQC, TRETS, TSAS, TSC, TSLP, TWEB.
-% \documentclass[acmsmall]{acmart}
-
-%%%% Large single column format, used for IMWUT, JOCCH, PACMPL, POMACS, TAP, PACMHCI
-% \documentclass[acmlarge,screen]{acmart}
-
-%%%% Large double column format, used for TOG
-% \documentclass[acmtog, authorversion]{acmart}
-
-%%%% Generic manuscript mode, required for submission
-%%%% and peer review
-
-
-%\documentclass[manuscript,screen,review]{acmart}
-
 \documentclass[sigconf]{acmart}
 
-%% Fonts used in the template cannot be substituted; margin 
-%% adjustments are not allowed.
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
     \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
 
-%% Rights management information.  This information is sent to you
-%% when you complete the rights form.  These commands have SAMPLE
-%% values in them; it is your responsibility as an author to replace
-%% the commands and values with those provided to you when you
-%% complete the rights form.
 \setcopyright{acmcopyright}
 \copyrightyear{2021}
 \acmYear{2021}
-\acmDOI{10.1145/1122445.1122456}
+\acmDOI{XX.XXXX/XXXXXXX.XXXXXXX}
 
 %% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[Interacción 2021]{XXI CONGRESO INTERNACIONAL DE INTERACCIÓN PERSONA-ORDENADOR}{September 22-24, 2021}{Málaga, España}
-\acmBooktitle{Interacción 2021, XXI CONGRESO INTERNACIONAL DE IPO,
-  September 22--24, 2021,Málaga, España}
-\acmPrice{15.00}
-\acmISBN{978-1-4503-XXXX-X/18/06}
+\acmConference[Interacción 20/21]{Interacción 20/21: Congreso Internacional de Interacción Persona-Ordenador}{Septiembre 22-24, 2021}{Málaga, SPAIN}
+\acmPrice{XX.XX}
+\acmISBN{XXX-X-XXXX-XXXX-X/XX/XX}
+
+\settopmatter{printacmref=false}
 
 
-%%
-%% Submission ID.
-%% Use this when submitting an article to a sponsored event. You'll
-%% receive a unique submission ID from the organizers
-%% of the event, and this ID should be used as the parameter to this command.
-%%\acmSubmissionID{123-A56-BU3}
-
-%%
-%% The majority of ACM publications use numbered citations and
-%% references.  The command \citestyle{authoryear} switches to the
-%% "author year" style.
-%%
-%% If you are preparing content for an event
-%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
-%% citations and references.
-%% Uncommenting
-%% the next command will enable that style.
-%%\citestyle{acmauthoryear}
-
-%%
-%% end of the preamble, start of the body of the document source.
 \begin{document}
 
-%%
-%% The "title" command has an optional parameter,
-%% allowing the author to define a "short title" to be used in page headers.
 \title{Adaptive gamification of citizen science projects}
 
-%%
-%% The "author" command and its associated commands are used to define
-%% the authors and their affiliations.
-%% Of note is the shared affiliation of the first two authors, and the
-%% "authornote" and "authornotemark" commands
-%% used to denote shared contribution to the research.
 
 \author{María Dalponte Ayastuy}
 \email{mdalponte@unq.edu.ar}
 
 \affiliation{%
-  \institution{Departamento CyT, Universidad Nacional de Quilmes}
-  \streetaddress{R. Saenz Peña 352}
-  \city{Bernal}
-  \state{Buenos Aires}
-  \country{Argentina}
+	\institution{Departamento CyT, Universidad Nacional de Quilmes}
+	\streetaddress{R. Saenz Peña 352}
+	\city{Bernal}
+	\state{Buenos Aires}
+	\country{Argentina}
 }
- 
+
 \affiliation{%
-  \institution{LIFIA, Fac. de Informatica, Universidad Nac. de La Plata}
-  \streetaddress{50 y 120}
-  \city{La Plata}
-  \state{Buenos Aires}
-  \country{Argentina}
+	\institution{LIFIA, Fac. de Informatica, Universidad Nac. de La Plata}
+	\streetaddress{50 y 120}
+	\city{La Plata}
+	\state{Buenos Aires}
+	\country{Argentina}
 }
 
 \orcid{0000-0002-1412-5694}
@@ -125,63 +49,50 @@
 \email{diego.torres@lifia.info.unlp.edu.ar}
 
 \affiliation{%
-  \institution{LIFIA, CICPBA-Fac. de Informatica, Universidad Nac. de La Plata}
-  \streetaddress{50 y 120}
-  \city{La Plata}
-  \state{Buenos Aires}
-  \country{Argentina}
+	\institution{LIFIA, CICPBA-Fac. de Informatica, Universidad Nac. de La Plata}
+	\streetaddress{50 y 120}
+	\city{La Plata}
+	\state{Buenos Aires}
+	\country{Argentina}
 }
 
 \affiliation{%
-  \institution{Departamento CyT, Universidad Nacional de Quilmes}
-  \streetaddress{R. Saenz Peña 352}
-  \city{Bernal}
-  \state{Buenos Aires}
-  \country{Argentina}
+	\institution{Departamento CyT, Universidad Nacional de Quilmes}
+	\streetaddress{R. Saenz Peña 352}
+	\city{Bernal}
+	\state{Buenos Aires}
+	\country{Argentina}
 }
 
 
 \renewcommand{\shortauthors}{Dalponte and Torres}
+\begin{abstract}
+This article presents the doctoral proposal whose main objective is to develop an adaptation device for the game elements and mechanics in citizen science projects, based on the user behaviour and the community ecosystem.  Gamification is a strategy to convene participants to citizen science projects. However, it cannot be  generalized  because  of  the  different  users’  profiles,  and  so  it  must be tailored to the users and playing contexts. Specifically, this article introduces the main and secondary objectives, the methodology and the expected results of these doctoral proposal.
+\end{abstract}
 
-%%
-%% The abstract is a short summary of the work to be presented in the
-%% article.
 
-
-%%
-%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
-%% Please copy and paste the code instead of the example below.
-%%
 \begin{CCSXML}
-<ccs2012>
-   <concept>
-       <concept_id>10003120.10003121</concept_id>
-       <concept_desc>Human-centered computing~Human computer interaction (HCI)</concept_desc>
-       <concept_significance>500</concept_significance>
-       </concept>
-   <concept>
-       <concept_id>10010147.10010257</concept_id>
-       <concept_desc>Computing methodologies~Machine learning</concept_desc>
-       <concept_significance>500</concept_significance>
-       </concept>
- </ccs2012>
+	<ccs2012>
+	<concept>
+	<concept_id>10003120.10003121</concept_id>
+	<concept_desc>Human-centered computing~Human computer interaction (HCI)</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10010147.10010257</concept_id>
+	<concept_desc>Computing methodologies~Machine learning</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	</ccs2012>
 \end{CCSXML}
+
+
 
 \ccsdesc[500]{Human-centered computing~Human computer interaction (HCI)}
 \ccsdesc[500]{Computing methodologies~Machine learning}
 
-%%
-%% Keywords. The author(s) should pick words that accurately describe
-%% the work being presented. Separate the keywords with commas.
 \keywords{Human computer interaction (HCI),Machine learning, User profiling, Adaptive gamification, Collaborative location collecting systems}
 
-
-\begin{abstract}
-This article presents the doctoral proposal whose main objective is to develop an adaptation device for the game elements and mechanics in citizen science projects, based on the user behaviour and the community ecosystem.  Gamification is a strategy to convene participants to citizen science projects. However, it cannot be  generalized  because  of  the  different  users’  profiles,  and  so  it  must be tailored to the users and playing contexts. Specifically, this article introduces the main and secondary objectives, the methodology and the expected results of these doctoral proposal.
-\end{abstract}
-%%
-%% This command processes the author and affiliation and title
-%% information and builds the first part of the formatted document.
 \maketitle
 
 
@@ -239,7 +150,7 @@ The research methodology is process with the following steps: 1) to survey the s
 %\textbf{definición de: gamification, adaptive gamification, col SYSTEM? citar gobel, deterding}
 
 %Taking into account the underlying cultural diversity in those projects, the adaptability of gamification design and strategies is a promissory research field. The existing research on gamification applied to collaborative systems in terms of personalization is preliminary or even immature. \cite{ayastuy_adaptive_2021}
- 
+
 
 To identify representative studies related to adaptive gamification and CLCS, a systematic mapping
 was carried out \cite{petersen_guidelines_2015}. The review allowed identifying different proposals for the scope (standard, ad-hoc or flexible) and the versatility (dynamic vs. static) of the user model, but it was found that in most of the cases, the model is neither defined nor explicitly specified. 
@@ -251,11 +162,11 @@ There were found, as a result of the evaluation, different adaptation points of 
 The project has reached the following milestones:
 
 \begin{itemize}
-    \item \textit{Adaptive Gamification in Collaborative systems, a Systematic Mapping Study}:  a study of the published research on the application of adaptive gamification to collaborative systems. The study  focuses  on  works  that  explicitly  discuss  an approach  of personalization or adaptation of the gamification elements in this type of system.  It employs a systematic mapping design in which a categorical structure for classifying the research results is proposed based on the topics that emerged from the papers review.  Published \cite{ayastuy_adaptive_2021}
-    %The main contributions of this paper are a formalization of the adaptation strategies and the proposal of a new taxonomy for gamification elements adaptation.   The  results  evidence  the  lack  of  research  literature  in  the  study of adapting gamification in the field of collaborative systems.  Considering the underlying cultural diversity in those projects, the adaptability of gamification design and strategies is a promissory research field
-    \item \textit{Adaptive gamification in collaborative location collecting systems: a case of traveling behavior detection}\\ This work is focused on the first steps to detect users’ behavioral profiles related to spatial-temporal activities in the context of collaborative location collecting systems. Accepted in \textit{IX Conference on Cloud computing, Big Data and Emerging Topics}.
-    
-    \item \textit{Relevance of non-activity representation in traveling user behavior profiling for adaptive gamification}\\ This work presents two approaches of traveling user behavior pro-filing: a raw series built up with categorical data that describes the activity of the user in a period of time, and a timed series that is an enhanced version of the first that includes a representation of the non-activity time frames. To describe user behavior categories to offer a tailored gamification strategy, this article seeks to analyze what aspects the different representations can contribute. 
+	\item \textit{Adaptive Gamification in Collaborative systems, a Systematic Mapping Study}:  a study of the published research on the application of adaptive gamification to collaborative systems. The study  focuses  on  works  that  explicitly  discuss  an approach  of personalization or adaptation of the gamification elements in this type of system.  It employs a systematic mapping design in which a categorical structure for classifying the research results is proposed based on the topics that emerged from the papers review.  Published \cite{ayastuy_adaptive_2021}
+	%The main contributions of this paper are a formalization of the adaptation strategies and the proposal of a new taxonomy for gamification elements adaptation.   The  results  evidence  the  lack  of  research  literature  in  the  study of adapting gamification in the field of collaborative systems.  Considering the underlying cultural diversity in those projects, the adaptability of gamification design and strategies is a promissory research field
+	\item \textit{Adaptive gamification in collaborative location collecting systems: a case of traveling behavior detection}\\ This work is focused on the first steps to detect users’ behavioral profiles related to spatial-temporal activities in the context of collaborative location collecting systems. Accepted in \textit{IX Conference on Cloud computing, Big Data and Emerging Topics}.
+	
+	\item \textit{Relevance of non-activity representation in traveling user behavior profiling for adaptive gamification}\\ This work presents two approaches of traveling user behavior pro-filing: a raw series built up with categorical data that describes the activity of the user in a period of time, and a timed series that is an enhanced version of the first that includes a representation of the non-activity time frames. To describe user behavior categories to offer a tailored gamification strategy, this article seeks to analyze what aspects the different representations can contribute. 
 \end{itemize}
 
 
@@ -266,15 +177,11 @@ The project has reached the following milestones:
 The contributions of this PhD project should include: a) a state of the art research, b) a conceptual framework modeling user behaviour profile as well as the citizen science ecosystem and the game elements and mechanics applicable to these projects, c) an adaptation device based on machine learning techniques, to tailor the gamification to the users and community. 
 
 
-%% The next two lines define the bibliography style to be used, and
-%% the bibliography file.
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{references}
 
-%%
-%% If your work has an appendix, this is the place to put it.
+\bibliography{references}
 
 \end{document}
 \endinput
 %%
-%% End of file `sample-authordraft.tex'.
+%% End of file `sample-sigconf.tex'.
